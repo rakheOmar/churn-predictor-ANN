@@ -1,14 +1,14 @@
-# Customer Churn Prediction
+# Customer Churn Prediction 🤖
 
 A simple Streamlit web app that predicts customer churn using an Artificial Neural Network (ANN).
 
-## Features
+> Made this while learning Deep Learning from [Krish Naik](https://www.youtube.com/@krishnaik06)
 
-- Predicts customer churn probability
-- Interactive web interface
-- Real-time predictions using TensorFlow
+## 📸 Screenshot
 
-## Tech Stack
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/7b3020d8-ce5f-4c30-8543-b3aeef8cfff9" />
+
+## 🛠️ Tech Stack
 
 - **Python 3.13**
 - **TensorFlow** - Deep learning model
@@ -17,13 +17,13 @@ A simple Streamlit web app that predicts customer churn using an Artificial Neur
 - **uv** - Fast Python package manager
 - **ruff** - Fast Python linter
 
-## Setup
+## 📦 Setup
 
 1. **Clone the repository**
 
    ```bash
-   git clone <your-repo-url>
-   cd "Section 53 - End to End Deep Learning Project Using ANN"
+   git clone https://github.com/rakheOmar/churn-predictor-ANN.git
+   cd churn-predictor-ANN
    ```
 
 2. **Install dependencies using uv**
@@ -42,7 +42,7 @@ A simple Streamlit web app that predicts customer churn using an Artificial Neur
    source ann-project/bin/activate
    ```
 
-## Run the App
+## 🚀 Run the App
 
 ```bash
 streamlit run main.py
@@ -50,7 +50,7 @@ streamlit run main.py
 
 The app will open in your browser at `http://localhost:8501`
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 ├── main.py                    # Streamlit application
@@ -67,7 +67,7 @@ The app will open in your browser at `http://localhost:8501`
 └── pyproject.toml            # Project dependencies
 ```
 
-## Development
+## 🔧 Development
 
 **Lint code with ruff:**
 
@@ -81,19 +81,40 @@ ruff check .
 ruff format .
 ```
 
-## Usage
+## 💡 Usage
 
-1. Enter customer information in the left panel
-2. Click "Predict Churn" button
+1. Enter customer information in the left panel (split into 2 columns)
+2. Click **"Predict Churn"** button
 3. View the prediction results on the right panel
 
-## Model
+## 🧠 Model Details
 
 The model is trained on the Churn Modelling dataset and uses:
 
-- Input features: Geography, Gender, Age, Credit Score, Balance, Tenure, Number of Products, Credit Card status, Active Member status, Estimated Salary
-- Output: Churn probability (0-1)
+**Input Features:**
 
-## License
+- Geography (France, Spain, Germany)
+- Gender (Male, Female)
+- Age
+- Credit Score
+- Account Balance
+- Tenure (years with bank)
+- Number of Products
+- Has Credit Card (Yes/No)
+- Is Active Member (Yes/No)
+- Estimated Salary
 
-MIT
+**Output:**
+
+- Churn probability (0-1)
+- Risk level (Low/Medium/High)
+
+
+## 🙏 Acknowledgments
+
+- Dataset: [Churn Modelling Dataset](https://www.kaggle.com/datasets/shrutimechlearn/churn-modelling)
+- Tutorial by: [Krish Naik](https://www.udemy.com/course/complete-machine-learning-nlp-bootcamp-mlops-deployment/)
+
+---
+
+Made with ❤️ while learning Deep Learning
